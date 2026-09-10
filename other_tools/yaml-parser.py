@@ -2,6 +2,10 @@
 import json
 import sys
 
+'''
+解析 YAML 字符串为 JSON 字符串
+'''
+
 def parse_yaml_simple(text):
     result = {}
     current_section = result

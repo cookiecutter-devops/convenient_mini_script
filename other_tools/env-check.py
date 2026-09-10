@@ -2,6 +2,9 @@
 import sys
 import platform
 
+'''
+检查环境信息
+'''
 def check_environment():
     info = {
         "python": sys.version,

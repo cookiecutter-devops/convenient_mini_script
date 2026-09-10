@@ -6,3 +6,6 @@
   - [env-check](env-check.py)
   - [base64-tool](base64-tool.py)
   - [config-loader](config-loader.py)
+  - [render-templates](render_templates.py)
+  - [ini2yaml](ini2yaml.py)
+  - [j2render](j2render.py)
