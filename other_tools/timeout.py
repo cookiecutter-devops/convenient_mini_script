@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+启动一个进程，执行某代码段，若超时(时间可以设置,默认10秒)，则退出脚本
+
+from timeout import TimeOut
+
+def test():
+    import time
+    time.sleep(12)
+
+with TimeOut():
+    print("start")
+    test()
+    print("end")
+"""
+
+import signal
+import logging
+
+LOG = logging.getLogger(__name__)
+
+
+class TimeOutException(Exception):
+    """ An  error occurred """
+    def __init__(self, message=None):
+        self.message = message
+
+
+def handle_alarm_signal(signum, stack):
+    raise TimeOutException("timeout")
+
+
+class TimeOut(object):
+    def __init__(self, time=10):
+        self.out_time = time
+
+    def __enter__(self):
+        signal.alarm(self.out_time)
+        signal.signal(signal.SIGALRM, handle_alarm_signal)
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        signal.alarm(0)
+        if exc_type:
+            if exc_type is  TimeOutException:
+                LOG.info("caught an Exception:%s" % exc_type)
+            else:
+                LOG.info("caught an TimeOut Exception")
+
+# if __name__ == '__main__':
+#     with TimeOut(5):
+#         time.sleep(6)
+#     print("continue")

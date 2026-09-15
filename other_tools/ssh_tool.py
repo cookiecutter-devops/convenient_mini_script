@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 import os
 import pymysql
 import sys
@@ -6,6 +7,19 @@ import paramiko
 import argparse
 import configparser
 from concurrent.futures import ThreadPoolExecutor,as_completed
+
+"""
+ssh工具类,多线程执行ssh命令,获取返回结果,并打印出来
+参数:
+    hosts: 服务器列表,每个元素为(ip,user,password)
+    cmd: 要执行的命令
+    timeout: 超时时间
+    workers: 并发数
+    quiet: 是否静默模式
+
+示例：
+python ssh_tool.py --hosts=192.168.1.1,192.168.1.2 --cmd=ls --timeout=10 --workers=2 --quiet
+"""
 config_file=os.path.expanduser("~/bin/config_ssh.ini")
 def load_db_config():
     config=configparser.ConfigParser()

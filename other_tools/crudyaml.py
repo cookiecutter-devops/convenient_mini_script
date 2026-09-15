@@ -17,6 +17,8 @@ except NameError:
     text_type = str
 
 '''
+crudyaml.py: 对yaml文件进行读写操作
+
 python crudyaml.py /etc/bingo/bingo.yaml get databases
 python crudyaml.py /etc/bingo/bingo.yaml set databases.nova "dm://nova:Aa123456@172.16.131.11:25236"
 '''
