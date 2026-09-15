@@ -1,6 +1,6 @@
 <p align="center">
   <a href="./README_EN.md">English</a> |
-  <a href="./README.md">简体中文</a> 
+  <a href="./README.md">简体中文</a>
 </p>
 
 ----
@@ -8,6 +8,28 @@
 # 网络工具集
 
 这个目录包含了用于网络测试和管理的实用工具脚本。
+
+
+## ip_lookup.py - IP地址查询工具
+
+一个简单的IP地址查询工具，用于获取IP地址的详细信息，如国家、地区、城市、ISP、经纬度等。
+
+
+## http-client.py - HTTP客户端工具
+
+一个简单的HTTP客户端工具，用于发送HTTP请求并查看响应。
+
+### 示例
+
+```bash
+python http-client.py GET https://httpbin.org/get
+```
+
+## api-tester.py - API测试工具
+
+一个简单的API测试工具，用于测试API接口的响应。
+
+
 
 ## network_speed_test.py - 网络速度测试工具
 
@@ -194,4 +216,9 @@ https://example.com/file2,自定义文件名2.pdf
 安装依赖：
 ```bash
 pip install httpx tqdm
-``` 
+```
+
+
+## 端口扫描工具 (port-scanner.py)
+
+实现一个简单的端口扫描工具，用于扫描目标主机的指定端口是否开放。

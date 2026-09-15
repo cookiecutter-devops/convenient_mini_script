@@ -1,6 +1,6 @@
 <p align="center">
   <a href="./README_EN.md">English</a> |
-  <a href="./README.md">简体中文</a> 
+  <a href="./README.md">简体中文</a>
 </p>
 
 ----
@@ -8,6 +8,26 @@
 # Network Tools
 
 This directory contains practical tool scripts for network testing and management.
+
+
+## IP Lookup Tool (ip_lookup.py)
+
+一个简单的IP地址查询工具，用于获取IP地址的详细信息，如国家、地区、城市、ISP、经纬度等。
+
+## http-client.py - HTTP客户端工具
+
+一个简单的HTTP客户端工具，用于发送HTTP请求并查看响应。
+
+### 示例
+
+```bash
+python http-client.py GET https://httpbin.org/get
+```
+
+## api-tester.py - API测试工具
+
+一个简单的API测试工具，用于测试API接口的响应。
+
 
 ## Network Speed Test Tool (network_speed_test.py)
 
@@ -194,4 +214,4 @@ https://example.com/file2,custom_filename2.pdf
 Install dependencies:
 ```bash
 pip install httpx tqdm
-``` 
+```

@@ -3,6 +3,10 @@ import json
 import os
 from pathlib import Path
 
+"""
+多层配置加载器
+"""
+
 class ConfigLoader:
     def __init__(self, env_prefix="APP"):
         self.config = {}
