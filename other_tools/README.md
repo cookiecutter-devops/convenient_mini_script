@@ -2,8 +2,11 @@
 
 | 工具名称 | 描述 |脚本查看|
 | -------- | ------- | ------------|
+| backup-tool| 备份工具 | [backup-tool.py](backup-tool.py) |
 | base64-tool | base64编码和解码工具 | [base64-tool.py](base64-tool.py) |
+| batch-rename | 批量重命名文件 | [batch-rename.py](batch-rename.py) |
 | concurrent_ping| 多线程ping工具 | [concurrent_ping.py](concurrent_ping.py) |
+| ConfigParse | 读取ini文件内容转为dict格式,或者将dict内容写入ini文件 | [ConfigParse.py](ConfigParse.py) |
 | config-loader | 加载配置文件 | [config-loader.py](config-loader.py) |
 | ConfigParse | 读取ini文件内容转为dict格式,或者将dict内容写入ini文件 | [ConfigParse.py](ConfigParse.py) |
 | crudyaml | 简单的yaml文件的 crud操作工具 | [crudyaml.py](crudyaml.py) |
@@ -13,6 +16,7 @@
 | file_compare | 对相似两个目录文件进行对比 | [file_compare.py](file_compare.py) |
 | FileLock | 文件锁类，实现对文件的加锁和解锁 | [FileLock.py](FileLock.py) |
 | ini2yaml | 将ini文件转换为yaml文件 | [ini2yaml.py](ini2yaml.py) |
+| ini2json | 将ini文件转换为json文件 | [ini2json.py](ini2json.py) |
 | j2render | 使用jinja2模板渲染文件，类似ansible的template模块 | [j2render.py](j2render.py) |
 | json-formatter | 格式化json字符串 | [json-formatter.py](json-formatter.py) |
 | json2yaml | 将json文件转换为yaml文件 | [json2yaml.py](json2yaml.py) |

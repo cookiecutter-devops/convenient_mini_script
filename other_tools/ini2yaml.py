@@ -3,6 +3,10 @@
 import re
 import argparse
 
+"""
+INI文件转换为YAML文件
+"""
+
 def load_env(file_path):
     env_vars = {}
     with open(file_path, 'r') as file:
