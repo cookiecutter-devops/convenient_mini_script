@@ -37,12 +37,19 @@
 | log-analyzer | 日志分析工具 | [log-analyzer.py](log-analyzer.py) |
 | markdown-toc | 生成markdown文件的目录 | [markdown-toc.py](markdown-toc.py) |
 | options | 解析命令行参数 | [options.py](options.py) |
+| password-gen | 密码生成工具 | [password-gen.py](password-gen.py) |
+| pdf-merger | 合并多个pdf文件 | [pdf-merger.py](pdf-merger.py) |
 | port-scan | 扫描端口是否开放 | [port-scan.py](port-scan.py) |
+| progress-bar | 进度条工具 | [progress-bar.py](progress-bar.py) |
 | query_json | 根据json对象中属性进行搜索,将符合条件的json对象打印出来 | [query_json.py](query_json.py) |
+| regex-test| 正则表达式测试工具 | [regex-test.py](regex-test.py) |
 | render-templates | 批量渲染模板文件 | [render_templates.py](render_templates.py) |
+| retry-decorator | 重试装饰器 | [retry-decorator.py](retry-decorator.py) |
 | ssh-tool | ssh工具类,多线程执行ssh命令,获取返回结果,并打印出来 | [ssh_tool.py](ssh_tool.py) |
 | ssh | 实现登录服务器,执行linux命令,获取返回结果 | [ssh.py](ssh.py) |
+| text-search | 文本搜索工具 | [text-search.py](text-search.py) |
 | timeout | 超时工具类,实现对命令执行超时的处理 | [timeout.py](timeout.py) |
+| timestamp-tool | 时间戳工具 | [timestamp-tool.py](timestamp-tool.py) |
 | url-encode | url编码工具 | [url-encode.py](url-encode.py) |
 | yaml-merge | 合并多个yaml文件 | [yaml-merge.py](yaml-merge.py) |
 | yaml-parser | 解析yaml字符串 | [yaml-parser.py](yaml-parser.py) |
